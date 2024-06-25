@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playwrite IT Moderna", cursive;
+}
+
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .menu li {
+    margin-right: 10px;
+}
+
+.navbar .menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/trt.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kartu {
+    width: 90%;
+    max-width: 400px;
+    color: #fff;
+    text-align: center;
+    padding: 40px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.kartu img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.kartu h2 {
+    font-family: "Oleo Script", system-ui;
+    font-size: 30px;
+    font-weight: 600;
+    background: linear-gradient(270deg, #fffdfd, #19c4f8, #e7e9e5, #19c4f8);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 10s ease infinite;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.kartu p {
+    font-size: 16px;
+    margin: 0;
+    max-width: 280px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.kartu .links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.kartu .links img {
+    width: 30px;
+    border-radius: 50px;
+    transition: background 0.5s;
+}
+
+.kartu .links img:hover {
+    background-color: #ff01cf;
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    background: #19c4f8;
+    color: #f8f6f8;
+    padding: 8px 20px;
+    border-radius: 30px;
+    margin: 0;
+    align-self: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Media Queries untuk Responsif */
+@media (max-width: 768px) {
+    .kartu {
+        padding: 20px 15px;
+    }
+
+    .kartu img {
+        width: 100px;
+    }
+
+    .kartu h2 {
+        font-size: 25px;
+    }
+
+    .kartu p {
+        font-size: 14px;
+        max-width: 220px;
+    }
+
+    .kartu .links img {
+        width: 25px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 6px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .kartu {
+        padding: 15px 10px;
+    }
+
+    .kartu img {
+        width: 80px;
+    }
+
+    .kartu h2 {
+        font-size: 20px;
+    }
+
+    .kartu p {
+        font-size: 12px;
+        max-width: 180px;
+    }
+
+    .kartu .links img {
+        width: 20px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
